@@ -11,6 +11,8 @@
   --color-blood: #6e2924;
   --color-burgundy: #421b19;
   --color-rust: #8a4b36;
+  --color-taupe: #b8b1a5;
+  --color-primary: #ffb4ac;
 }
 
 /* fonts */
@@ -32,4 +34,12 @@ body {
   background: var(--color-obsidian);
   color: var(--color-bone);
   font-family: var(--font-inter), sans-serif;
+}
+
+@utility label-meta {
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }

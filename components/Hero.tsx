@@ -117,7 +117,7 @@ export default function Hero() {
                 alt={item.title}
                 fill
                 sizes="25vw"
-                className="object-cover transition-transform duration-600 group-hover:scale-[1.02]"
+                className={`object-cover ${item.position} transition-transform duration-600 group-hover:scale-[1.02]`}
               />
               {/* Bottom scrim so the text stays readable */}
               <div className="absolute inset-0 bg-linear-to-b from-obsidian/0 via-obsidian/30 to-obsidian/95" />

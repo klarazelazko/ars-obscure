@@ -5,7 +5,7 @@
   --color-obsidian: #0b0b0a;
   --color-charcoal: #151514;
   --color-ash: #242320;
-  --color-stone: #777268;
+  --color-stone: #8f897d;
   --color-bone: #d8d1c4;
   --color-ivory: #e9e2d6;
   --color-blood: #6e2924;
@@ -34,6 +34,11 @@ body {
   background: var(--color-obsidian);
   color: var(--color-bone);
   font-family: var(--font-inter), sans-serif;
+}
+
+:focus-visible {
+  outline: 1px solid var(--color-bone);
+  outline-offset: 4px;
 }
 
 @utility label-meta {

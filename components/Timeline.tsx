@@ -33,7 +33,7 @@ export default function Timeline() {
               <p className="label-meta text-stone">
                 Epoch {String(i + 1).padStart(2, "0")}
               </p>
-              <p className="font-display text-2xl text-bone">{epoch.year}</p>
+              <p className="font-display text-2xl text-bone lining-nums">{epoch.year}</p>
               <div className="text-[11px] leading-tight text-taupe">
                 {epoch.artists.map((name) => (
                   <p key={name}>{name}</p>

@@ -17,14 +17,14 @@ const themes = [
 
 export default function ThemesList() {
   return (
-    <section className="grid grid-cols-12 gap-x-6 px-16 py-32">
-      {/* Left column: heading + short description */}
-      <div className="col-span-4 space-y-4">
+    <section className="grid grid-cols-12 gap-x-6 px-16 py-24">
+      {/* Left column: heading stays in view while the list scrolls */}
+      <div className="sticky top-24 col-span-4 space-y-4 self-start">
         <p className="label-meta text-stone">Thematic taxonomy</p>
         <h2 className="font-display text-5xl font-light uppercase text-ivory">
           Thematic Chambers
         </h2>
-        <p className="max-w-xs text-sm leading-7 text-taupe">
+        <p className="max-w-xs text-pretty text-sm leading-7 text-taupe">
           The collection is organised by emotion and psychological structure
           rather than by chronology.
         </p>
@@ -39,8 +39,8 @@ export default function ThemesList() {
               className="group flex items-center justify-between px-2 py-4 transition-colors duration-200 hover:bg-ash/40"
             >
               <span className="flex items-baseline gap-6">
-                {/* Row number: 01, 02, ... */}
-                <span className="label-meta text-stone transition-colors group-hover:text-primary">
+                {/* Row number: fixed width so every name starts at the same x */}
+                <span className="label-meta w-6 text-stone transition-colors group-hover:text-primary">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 {/* Theme name, nudges right on hover */}
@@ -51,7 +51,7 @@ export default function ThemesList() {
               <ArrowRight
                 size={14}
                 strokeWidth={1}
-                className="text-stone transition-colors group-hover:text-ivory"
+                className="text-taupe transition-colors group-hover:text-ivory"
               />
             </Link>
           </li>

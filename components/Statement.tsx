@@ -1,6 +1,6 @@
 export default function Statement() {
   return (
-    <section className="grid grid-cols-12 gap-x-6 bg-charcoal/50 px-16 py-32">
+    <section className="grid grid-cols-12 gap-x-6 bg-charcoal/50 px-16 py-24">
       {/* Left column: small label + caption */}
       <div className="col-span-3 space-y-2">
         <p className="label-meta text-stone">Curatorial statement</p>

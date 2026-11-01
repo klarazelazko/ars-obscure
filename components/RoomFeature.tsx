@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function RoomFeature() {
   return (
-    <section className="px-16 py-32">
+    <section className="px-16 py-24">
       {/* Section header: label + room title */}
       <div className="space-y-2">
         <p className="label-meta text-stone">Featured room</p>
@@ -14,12 +14,13 @@ export default function RoomFeature() {
 
       {/* Banner: background image + scrim + text block */}
       <div className="relative mt-12 min-h-[28rem] overflow-hidden border border-(--border-subtle)">
+        {/* scale-110 origin-left: temporary, pushes the black edge of the file out of view */}
         <Image
           src="/images/artworks/hell.jpg"
           alt=""
           fill
           sizes="100vw"
-          className="object-cover opacity-50"
+          className="origin-left scale-110 object-cover opacity-80"
         />
         <div className="absolute inset-0 bg-linear-to-r from-obsidian/85 to-obsidian/20" />
 
